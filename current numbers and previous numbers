@@ -1,0 +1,7 @@
+def sum_of_prev_and_current(numbers):
+    result = []
+    for i in range(1, len(numbers)):
+        result.append(numbers[i] + numbers[i - 1])
+    return result
+
+print(sum_of_prev_and_current([1, 2, 3, 4, 5]))
